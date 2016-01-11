@@ -1,6 +1,10 @@
+
 # Eventex
 
 Sistema de Eventos encomendado pela Morena.
+
+[![Build Status](https://travis-ci.org/felipebelucena/eventex.svg?branch=master)](https://travis-ci.org/felipebelucena/eventex)
+[![Code Health](https://landscape.io/github/felipebelucena/eventex/master/landscape.svg?style=flat)](https://landscape.io/github/felipebelucena/eventex/master)
 
 ## Como desenvolver?
 
@@ -12,7 +16,7 @@ Sistema de Eventos encomendado pela Morena.
 6. Execute os testes.
 
 ```console
-git clone git@github.com:felipebelucena/wttd.git wttd
+git clone git@github.com:felipebelucena/eventex.git wttd
 cd wttd
 python -m venv .wttd
 source .wttd/bin/activate
@@ -24,7 +28,7 @@ python manage.py test
 ## como fazer o deploy?
 
 1. Crie uma instância no heroku.
-2. Envia as configurações para o heroku
+2. Envie as configurações para o heroku
 3. Defina uma SECRET_KEY segura para instância
 4. Defina DEBUG=False
 5. Configure o serviço de email.
