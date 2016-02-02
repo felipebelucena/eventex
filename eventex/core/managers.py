@@ -9,10 +9,14 @@ class KindQuerySet(models.QuerySet):
         return self.filter(kind=self.model.PHONE)
 
 
-class PeriodManager(models.Manager):
+class PeriodQuerySet(models.QuerySet):
     NOON = '12:00'
+
     def at_morning(self):
         return self.filter(start__lt=self.NOON)
 
     def at_afternoon(self):
         return self.filter(start__gte=self.NOON)
+
+
+PeriodManager = models.Manager.from_queryset(PeriodQuerySet)
